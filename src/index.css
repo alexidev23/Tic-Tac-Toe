@@ -97,7 +97,7 @@ body {
 
 .board h1 {
   color: #eee;
-  margin-bottom: 16px;
+  margin-bottom: 46px;
 }
 
 .board button {
@@ -126,11 +126,25 @@ body {
 
 .turn {
   display: flex;
-  justify-content: center;
-  margin: 15px auto;
-  width: fit-content;
+  justify-content: space-around;
+  margin: 25px auto;
+  width: 300px;
   position: relative;
   border-radius: 10px;
+  gap: 40px;
+}
+
+.turn .jugador {
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.turn span {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .turn .square,

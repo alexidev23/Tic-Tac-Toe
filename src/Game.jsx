@@ -58,14 +58,21 @@ export default function GameBoard () {
   return (
     <main className='board'>
       <h1>TIC TAC TOE</h1>
-      <button onClick={resetGame}>Empezar de nuevo</button>
-      <section className='turn'>
-        <Square isSelected={turn === TURNS.X}>
-          {TURNS.X}
-        </Square>
-        <Square isSelected={turn === TURNS.O}>
-          {TURNS.O}
-        </Square>
+      <section className='contenedor_jugadores'>
+        <div className='turn'>
+          <div className='jugador'>
+            <span>Jugador 1</span>
+            <Square isSelected={turn === TURNS.X}>
+              {TURNS.X}
+            </Square>
+          </div>
+          <div className='jugador'>
+            <span>Jugador 2</span>
+            <Square isSelected={turn === TURNS.O}>
+              {TURNS.O}
+            </Square>
+          </div>
+        </div>
       </section>
       <section className='game'>
         {board.map((_, index) => {
