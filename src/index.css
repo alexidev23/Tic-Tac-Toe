@@ -6,7 +6,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1A252F;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,6 +19,7 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -29,6 +30,65 @@ body {
   box-sizing: border-box;
 }
 
+/* Estilos de la pantalla principal */
+.home {
+  width: fit-content;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen del juego */
+.imagen {
+  width: 200px;
+  margin: 40px auto;
+}
+
+/* Boton 1 vs 1 */
+.boton{
+  height: 70px;
+  width: 250px;
+  background-color: #275E8F;
+  border-radius: 40px;
+  transition: all .4s;
+}
+
+.boton .boton_jugar {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton:hover {
+  background-color: #09f;
+}
+
+/* Estilos para mobile */
+@media only screen and (max-width: 768px) {
+  .home h1 {
+    margin-bottom: 40px;
+  }
+  
+  .imagen {
+    width: 300px;
+  }
+
+  .boton {
+    width: 300px;
+  }
+}
+
+
+/* Estilos para el juego */
 .board {
   width: fit-content;
   margin: 40px auto;
