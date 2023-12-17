@@ -1,6 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
-import GameBoard from './game'
+import GameBoard from './Game'
 
 const Router = createBrowserRouter([
   {
